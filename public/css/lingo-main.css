@@ -1,0 +1,38 @@
+body{
+	background-image: url(../images/earth.jpg);
+	height: 100vh;
+}
+.main-body{
+	width: 75vw;
+	height: 100vh;
+	margin: auto;
+	background-color: rgba(255,255,255,0.3);
+}
+.main-body form{
+	text-align: center;
+}
+.main-body form > input, textarea{
+	font-size: 20px;
+	border-radius: 5px;
+	border: 1px solid #202020;
+	background-color: rgba(255,255,255,0.7);
+	padding: 5px;
+	margin: 10px;
+}
+.text-box{
+	width: 55vw;
+	height: 20vh;
+	padding: 10px;
+	display: block;
+	margin: auto;
+}
+.images{
+	margin-left:30%;
+	width: 40%;
+	padding: 10px;
+}
+.main-body h3{
+	padding: 20px;
+	background-color: rgba(255,255,255,0.5);
+	text-align: left;
+}

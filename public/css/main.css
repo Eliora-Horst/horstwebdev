@@ -1,0 +1,168 @@
+body{
+	width: 100vw;
+}
+.side-bar{
+	background-image: url(../images/side-bar.jpg);
+	background-size: cover;
+	width: 40vw;
+	height: 100vh;
+	border-right: 2px solid #0d1c2e;
+	z-index: 10;
+	position: absolute;
+	display: block;
+	box-shadow: 3px 0 10px 3px #0d1c2e;
+}
+.side-bar img{
+	width: 68%;
+	padding: 10px;
+	margin-left: 16%;
+}
+.portfolio{
+	width: 58vw;
+}
+.portfolio img{
+	width: 80%;
+	margin: 5px;
+	padding: 0;
+	border: 1px solid #181818;
+	border-radius: 2px;
+}
+.portHead{
+	background-color: #265287;
+	color: white;
+	padding: 3px;
+	padding-left: 10px;
+	margin: 0;
+	height: 6vh;
+	width: 50%;
+}
+iframe{
+	width: 80%;
+	border: 1px solid #181818;
+	border-radius: 2px;
+	padding: 0;
+	margin: 5px;
+}
+table{
+	width: 100vw;
+}
+th.col1, th.col2{
+	width: 40%;
+}
+th.col3{
+	width: 20%;
+}
+
+td > a{
+	font-size: 16px;
+}
+.linkbtn{
+	background-color: #0d1c2e;
+	border-radius: 5px;
+	text-align: center;
+	padding: 10px;
+	text-decoration: none;
+	color: white;
+	margin: 5px;
+	font-family: 'Copse';
+}
+
+.linkbtn:hover{
+	background-color: #204470;
+	color: white;
+	text-decoration: none;
+}
+.contact{
+	padding: 10px;
+}
+.contact td{
+	padding: 10px;
+}
+
+h1{
+	color: white;
+	padding: 20px 0 20px 0;
+	text-align: center;
+}
+h2{
+	background-color: #0b1d33;
+	color: white;
+	padding: 10px;
+	margin: 0;
+}
+h1, h2{
+	font-size: 45px;
+	margin: 0;
+}
+h1, h2, h3, h4{
+	font-family: 'Copse', serif;
+}
+.table-border{
+	border-right: solid 3px #78889c;
+}
+p{
+	width: 40vw;
+}
+.two-col ul{
+    display: inline-block;
+    *display: inline;
+}
+p, li{
+	font-size: 14px;
+}
+td{
+	font-size: 16px;
+}
+hr{
+	border: solid 1px #a2a2a2;
+	margin: 1px;
+}
+
+@media (max-width: 414px) {
+	.tab-content {
+	    height: 50vh;
+	    top: 50vh;
+	    display: inline-block;
+	    width: 100vw;
+	    left: 0;
+	    overflow: scroll;
+	}
+	.side-bar{
+		position: fixed;
+		height: 50vh;
+		top: 0;
+		display: inline-block;
+		width: 100vw;
+	}
+	h1{
+		font-size: 20px;
+		padding: 5px;
+		width: 100vw;
+	}
+	h2{
+		font-size: 25px;
+	}
+	p{
+		font-size: 12px;
+		width: 100%;
+	}
+	.tabs{
+		width: 100vw;
+		padding: 3px;
+	}
+	.tab-links{
+		width: 100%;
+		margin-left: 5%;
+	}
+	.tab-links li {
+	    margin: 2px;
+	}
+	.tab-links a{
+		font-size: 12px;
+		padding: 9px 9px;
+		margin: 2px;
+	}
+	li{
+		font-size: 12px;
+	}
+}
