@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<!-- saved from url=(0034)http://fiddle.jshell.net/_display/ -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  
+  <title> - jsFiddle demo</title>
+  
+  
+  <script type="text/javascript" src="angular.min.js"></script><style type="text/css">@charset "UTF-8";[ng\:cloak],[ng-cloak],[data-ng-cloak],[x-ng-cloak],.ng-cloak,.x-ng-cloak{display:none;}ng\:form{display:block;}</style>
+  
+  
+  
+  
+  <link rel="stylesheet" type="text/css" href="result-light.css">
+  
+  <style type="text/css">
+    .rating {
+    color: #a9a9a9;
+    margin: 0;
+    padding: 0;
+}
+ul.rating {
+    display: inline-block;
+}
+.rating li {
+    list-style-type: none;
+    display: inline-block;
+    padding: 1px;
+    text-align: center;
+    font-weight: bold;
+    cursor: pointer;
+}
+.rating .filled {
+    color: red;
+}
+  </style>
+  
+
+
+
+<script type="text/javascript">//<![CDATA[
+
+var starApp = angular.module('starApp', []);
+
+starApp.controller('StarCtrl', ['$scope', function ($scope) {
+    $scope.rating = 0;
+    $scope.ratings = [{
+        current: 5,
+        max: 10
+    }, {
+        current: 3,
+        max: 5
+    }];
+
+    $scope.getSelectedRating = function (rating) {
+        console.log(rating);
+    }
+}]);
+
+starApp.directive('starRating', function () {
+    return {
+        restrict: 'A',
+        template: '<ul class="rating">' +
+            '<li ng-repeat="star in stars" ng-class="star" ng-click="toggle($index)">' +
+            '\u2605' +
+            '</li>' +
+            '</ul>',
+        scope: {
+            ratingValue: '=',
+            max: '=',
+            onRatingSelected: '&'
+        },
+        link: function (scope, elem, attrs) {
+
+            var updateStars = function () {
+                scope.stars = [];
+                for (var i = 0; i < scope.max; i++) {
+                    scope.stars.push({
+                        filled: i < scope.ratingValue
+                    });
+                }
+            };
+
+            scope.toggle = function (index) {
+                scope.ratingValue = index + 1;
+                scope.onRatingSelected({
+                    rating: index + 1
+                });
+            };
+
+            scope.$watch('ratingValue', function (oldVal, newVal) {
+                if (newVal) {
+                    updateStars();
+                }
+            });
+        }
+    }
+});
+//]]> 
+
+</script>
+
+</head>
+<body ng-app="starApp" class="ng-scope">
+  
+    <div ng-controller="StarCtrl" class="ng-scope"> <!-- ngRepeat: rating in ratings --><span ng-repeat="rating in ratings" class="ng-scope ng-binding">5 out of
+            10
+        <div star-rating="" rating-value="rating.current" max="rating.max" on-rating-selected="getSelectedRating(rating)" class="ng-isolate-scope ng-scope"><ul class="rating"><!-- ngRepeat: star in stars --><li ng-repeat="star in stars" ng-class="star" ng-click="toggle($index)" class="ng-scope filled $$hashKey">★</li><li ng-repeat="star in stars" ng-class="star" ng-click="toggle($index)" class="ng-scope filled $$hashKey">★</li><li ng-repeat="star in stars" ng-class="star" ng-click="toggle($index)" class="ng-scope filled $$hashKey">★</li><li ng-repeat="star in stars" ng-class="star" ng-click="toggle($index)" class="ng-scope filled $$hashKey">★</li><li ng-repeat="star in stars" ng-class="star" ng-click="toggle($index)" class="ng-scope filled $$hashKey">★</li><li ng-repeat="star in stars" ng-class="star" ng-click="toggle($index)" class="ng-scope $$hashKey">★</li><li ng-repeat="star in stars" ng-class="star" ng-click="toggle($index)" class="ng-scope $$hashKey">★</li><li ng-repeat="star in stars" ng-class="star" ng-click="toggle($index)" class="ng-scope $$hashKey">★</li><li ng-repeat="star in stars" ng-class="star" ng-click="toggle($index)" class="ng-scope $$hashKey">★</li><li ng-repeat="star in stars" ng-class="star" ng-click="toggle($index)" class="ng-scope $$hashKey">★</li></ul></div>
+        </span><span ng-repeat="rating in ratings" class="ng-scope ng-binding">3 out of
+            5
+        <div star-rating="" rating-value="rating.current" max="rating.max" on-rating-selected="getSelectedRating(rating)" class="ng-isolate-scope ng-scope"><ul class="rating"><!-- ngRepeat: star in stars --><li ng-repeat="star in stars" ng-class="star" ng-click="toggle($index)" class="ng-scope filled $$hashKey">★</li><li ng-repeat="star in stars" ng-class="star" ng-click="toggle($index)" class="ng-scope filled $$hashKey">★</li><li ng-repeat="star in stars" ng-class="star" ng-click="toggle($index)" class="ng-scope filled $$hashKey">★</li><li ng-repeat="star in stars" ng-class="star" ng-click="toggle($index)" class="ng-scope $$hashKey">★</li><li ng-repeat="star in stars" ng-class="star" ng-click="toggle($index)" class="ng-scope $$hashKey">★</li></ul></div>
+        </span>
+    </div>
+
+  
+
+
+
+
+</body></html>
