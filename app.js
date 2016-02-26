@@ -29,10 +29,7 @@ app.get('/', function(req, res){
 //   res.send(translation.translatedText);
 //   });
 // })
-app.get('/adams', function(req, res){
-	console.log(res.sendFile)
-  res.sendFile('/adams4pres/public/html/home.html', {root: './public'})
-});
+
 
 var port = 80
 app.listen(port, function(){
