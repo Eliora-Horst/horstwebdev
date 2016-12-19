@@ -166,3 +166,24 @@ hr{
 		font-size: 12px;
 	}
 }
+table{
+	width: 100%;
+}
+.gallery table > tbody > tr > td > a > img{
+	width: 100%;
+	padding:10px;
+	margin-left: 0;
+}
+.table-layout th, td{
+  text-align: center;
+  padding: 5px 15px;
+  font-size: 20px;
+}
+.left-border{
+	border-left: 1px solid #999;
+}
+th{
+	font-weight: normal;
+	font-style: italic;
+	color: #B0B0B0;
+}

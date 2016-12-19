@@ -18,6 +18,18 @@ app.get('/', function(req, res){
 	console.log(res.sendFile)
   res.sendFile('/html/home.html', {root: './public'})
 });
+
+app.get('/poe', function(req, res){
+	console.log(res.sendFile)
+  res.sendFile('/poe/home-page.html', {root: './public'})
+});
+
+app.get('/adams-for-president', function(req, res){
+	console.log(res.sendFile)
+  res.sendFile('/adams4pres/public/html/home.html', {root: './public'})
+});
+
+
 // //Lingo App
 // app.get('/lingo', function(req, res){
 //   res.sendFile('html/lingo.html', {root : './public'});
