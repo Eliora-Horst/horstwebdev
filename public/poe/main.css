@@ -261,3 +261,8 @@ a:link{
 	float: left;
 
 }
+.bio iframe{
+	padding: 10px;
+	margin: 0 auto;
+	display: block;
+}
