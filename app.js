@@ -26,7 +26,7 @@ app.get('/poe', function(req, res){
 
 app.get('/adams-for-president', function(req, res){
 	console.log(res.sendFile)
-  res.sendFile('/adams4pres/public/html/home.html', {root: './public'})
+  res.sendFile('/adams-for-president/public/html/home.html', {root: './public'})
 });
 
 
