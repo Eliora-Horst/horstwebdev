@@ -29,6 +29,10 @@ app.get('/adams-for-president', function(req, res){
   res.sendFile('/adams-for-president/public/html/home.html', {root: './public'})
 });
 
+app.get('/dhjournal', function(req, res){
+	console.log(res.sendFile)
+  res.sendFile('/journal/main.html', {root: './public'})
+});
 
 // //Lingo App
 // app.get('/lingo', function(req, res){
