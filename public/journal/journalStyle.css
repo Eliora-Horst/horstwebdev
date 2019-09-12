@@ -1,5 +1,5 @@
 html{
-	background: url("images/background.png") no-repeat; 
+	background: url("/journal/images/background.png") no-repeat; 
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	background-size: 100%;
