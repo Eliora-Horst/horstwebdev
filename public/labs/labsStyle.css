@@ -1,0 +1,125 @@
+html{
+	background: url("images/background.png") no-repeat; 
+/*	background: url("/lab/images/background.png") no-repeat; */
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	background-size: 100%;
+	background-color: #211e2b;
+}
+body{
+	background: none;
+	height: 100%;
+}
+.content{
+	background-color: #211e2b;
+}
+.main{
+	margin-left: 20%;
+	margin-right: 20%;
+	background-color: white;
+}
+.title{
+	width: 100%;
+	border-left: 1px solid black;
+	border-right: 1px solid black;
+	border-bottom: 1px solid #484360;
+	background-color: #211e2b;
+}
+.blog-posts{
+	background-color: white;
+}
+.section-head{
+	padding-top: 15px;
+	font-family: 'Oswald', sans-serif;
+	font-size: 50px;
+	color: #7139d4;
+}
+.caption{
+	position: relative;
+	display: inline-block; /* Make the width of box same as image */
+	border: 1px solid #383838;
+	}
+.caption .caption-text{
+	position: absolute;
+	z-index: 999;
+	margin: 0 0;
+	left: 0;
+	right: 0;        
+	text-align: left;
+	bottom: 0; /* Adjust this value to move the positioned div up and down */
+	font-family: 'Oswald', sans-serif;
+	font-size: 75px;
+	color: #fff;
+	width: 100%; /* Set the width of the positioned div */
+}
+.caption-text{
+	padding: 15px;
+}
+img{
+	width: 100%;
+}
+p{
+	font-family: 'Gayathri', sans-serif;
+	font-size: 20px;
+	padding-left: 25px;
+	padding-right: 25px;
+	color: #F8F8F8;
+}
+h1, h2, h3, h4, h5{
+	font-family: 'Oswald', sans-serif;
+	}
+h1{
+	padding-left: 10%;
+	margin: 0;
+	font-size: 175px;
+	color: #257ffe;
+}
+h2{
+	margin: 0 10%;
+	font-size: 35px;
+	color: #ec0cac;
+}
+h3{
+	margin: 0 10%;
+	font-size: 30px;
+	padding-bottom: 50px;
+	color: #820b81;
+
+}
+h4{
+	font-size: 42px;
+	color: #257ffe;
+}
+h5{
+	font-size: 30px;
+	border-bottom: 1px solid #ec0cac;
+	margin-bottom: 17px;
+	padding-bottom: 3px;
+	color: #820b81;
+}
+
+.ArticleCopy{
+  width: 100%;
+  border: 1px solid #484360;
+  padding: 3rem;
+}
+
+.ArticleCopy blockquote {
+	border-left: 0.2em solid #ec0cac;
+    border-radius: 3px;
+    position: relative; 
+    font-style: italic;
+    text-align: left;
+    padding: 1rem 1.2rem;
+    width: 80%;
+    margin: 1rem auto 2rem;
+    color: #211e2b;
+    background: #5f2c99;
+}
+.ArticleCopy blockquote p {
+	padding: 0;
+	color: white;
+}
+#image-padding{
+	padding-top: 20px;
+}

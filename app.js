@@ -34,6 +34,12 @@ app.get('/dhjournal', function(req, res){
   res.sendFile('/journal/main.html', {root: './public'})
 });
 
+app.get('/dhlabreports', function(req, res){
+	console.log(res.sendFile)
+  res.sendFile('/labs/main.html', {root: './public'})
+});
+
+
 // //Lingo App
 // app.get('/lingo', function(req, res){
 //   res.sendFile('html/lingo.html', {root : './public'});
