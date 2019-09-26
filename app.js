@@ -1,7 +1,5 @@
 var express = require('express')
 var bodyParser = require('body-parser')
-// var apiKey = require('./apiKey.js')
-var googleTranslate = require('google-translate')('AIzaSyDOL93Qn7zhUgimDo-P0PyfQD_tzTd8SWs ')
 
 // Create Express App Object \\
 var app = express();
