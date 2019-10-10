@@ -38,6 +38,7 @@ body{
 	position: relative;
 	display: inline-block; /* Make the width of box same as image */
 	border: 1px solid #383838;
+	width: 100%;
 	}
 .caption .caption-text{
 	position: absolute;
