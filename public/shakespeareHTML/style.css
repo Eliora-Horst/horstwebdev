@@ -2,7 +2,7 @@ body{
 	font-family: 'Domine', serif;
 }
 .imageHeader{
-	background-image: url("/shakespeareHTML/macbeth.svg") no-repeat;
+	background: url("/shakespeareHTML/macbeth.svg") no-repeat;
 	width: 100%:;
 }
 .header{
