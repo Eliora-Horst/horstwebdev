@@ -37,6 +37,11 @@ app.get('/dhlabreports', function(req, res){
   res.sendFile('/labs/main.html', {root: './public'})
 });
 
+app.get('/HTMLShakespeareExample', function(req, res){
+  console.log(res.sendFile)
+  res.sendFile('/shakespeareHTML/main.html', {root: './public'})
+});
+
 
 // //Lingo App
 // app.get('/lingo', function(req, res){
