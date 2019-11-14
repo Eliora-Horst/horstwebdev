@@ -3,7 +3,8 @@
 <head>
 	<title>The Tragedy of Macbeth</title>
 	<link href="https://fonts.googleapis.com/css?family=Domine&display=swap" rel="stylesheet"> 
-	<link rel="stylesheet" type="text/css" href="/shakespeareHTML/style.css">
+	<!-- <link rel="stylesheet" type="text/css" href="/shakespeareHTML/style.css"> -->
+
 	<!-- 
 	References:
 	https://www.w3schools.com/html/
@@ -13,58 +14,59 @@
 	 -->
 </head>
 <body>
-
-</body>
 	<div class="header">
-		<img src="/shakespeareHTML/Macbeth.svg">
+		<img src="Macbeth.svg">
 		<!-- <img src="/shakespeareHTML/macbeth.png"> -->
-		<h2>Actus Primus</h2>
+		<h2>Actus Primus.</h2>
 	</div>
-	<div class="sceneDiv">
-		<h3>Scena Prima</h3>
+	<div class="scene">
+		<div class="sceneDiv">
+			<h3>Scena Prima.</h3>
+		</div>
+		<div class="text">
+			<p><i>Thunder and Lightning. Enter three Witches.</i></p>
+			<table>
+				<tr><td>FIRST WITCH</td></tr>
+				<tr><td class="dialogueIndent">When ſhall we three meet againe?</td></tr>
+				<tr><td class="dialogueIndent">In Thunder, Lightning, or in Raine?<sup><a href="#f1">1</a></sup></td></tr>
+
+				<tr><td>SECOND WITCH</td></tr>
+				<tr><td class="dialogueIndent">When the 
+					<span class="tooltip">Hurley-burley's
+						<span class="tooltiptext">commotion</span></span> done,</td></tr>
+				<tr><td class="dialogueIndent">When the Battaile's loſt and wonne.</td></tr>
+
+				<tr><td>THIRD WITCH</td></tr>
+				<tr>
+					<td class="dialogueIndent">That will be ere the ſet of Sunne.</td>
+					<td id="lineNumber">5</td>
+				</tr>
+				<tr><td >FIRST WITCH</td></tr>
+				<tr><td class="dialogueIndent">Where the place?</td></tr>
+
+				<tr><td>SECOND WITCH</td></tr>
+				<tr><td class="dialogueIndent">Vpon the <span class="tooltip">heath.
+					<span class="tooltiptext">Barren wilderness</span></span>
+				</td></tr>
+
+				<tr><td>THIRD WITCH</td></tr>
+				<tr><td class="dialogueIndent">There to meet with <i>Macbeth.</i></td></tr>
+
+				<tr><td>FIRST WITCH</td></tr>
+				<tr><td class="dialogueIndent">I come, <i>Gray-Malkin.</i><sup><a href="#f2">2</a></sup></td></tr>
+
+				<tr><td>ALL</td></tr>
+				<tr>
+					<td class="dialogueIndent"><i>Padock</i> calls anon: faire is foule, and foule is fair,</td>
+					<td>10</td>
+				</tr>
+				<tr><td class="dialogueIndent">Houer through fogge and filthie ayre.<sup><a href="#f3">3</a></sup></td></tr>
+			</table>
+			<p id="exitIndent"><i>Exeunt</i></p>
+		</div>
 	</div>
-	<div class="text">
-		<p><i>Thunder and Lightning. Enter three Witches.</i></p>
-		<table>
-			<tr><td>FIRST WITCH</td></tr>
-			<tr><td class="dialogueIndent">When ſhall we three meet againe?</td></tr>
-			<tr><td class="dialogueIndent">In Thunder, Lightning, or in Raine?<sup><a href="#f1">1</a></sup></td></tr>
 
-			<tr><td>SECOND WITCH</td></tr>
-			<tr><td class="dialogueIndent">When the 
-				<span class="tooltip">Hurley-burley's
-					<span class="tooltiptext">commotion</span></span> done,</td></tr>
-			<tr><td class="dialogueIndent">When the Battaile's loſt and wonne.</td></tr>
-
-			<tr><td>THIRD WITCH</td></tr>
-			<tr>
-				<td class="dialogueIndent">That will be ere the ſet of Sunne.</td>
-				<td id="lineNumber">5</td>
-			</tr>
-			<tr><td >FIRST WITCH</td></tr>
-			<tr><td class="dialogueIndent">Where the place?</td></tr>
-
-			<tr><td>SECOND WITCH</td></tr>
-			<tr><td class="dialogueIndent">Vpon the <span class="tooltip">heath.
-				<span class="tooltiptext">Barren wilderness</span></span>
-			</td></tr>
-
-			<tr><td>THIRD WITCH</td></tr>
-			<tr><td class="dialogueIndent">There to meet with <i>Macbeth.</i></td></tr>
-
-			<tr><td>FIRST WITCH</td></tr>
-			<tr><td class="dialogueIndent">I come, <i>Gray-Malkin.</i><sup><a href="#f2">2</a></sup></td></tr>
-
-			<tr><td>ALL</td></tr>
-			<tr>
-				<td class="dialogueIndent"><i>Padock</i> calls anon: faire is foule, and foule is fair,</td>
-				<td>10</td>
-			</tr>
-			<tr><td class="dialogueIndent">Houer through fogge and filthie ayre.<sup><a href="#f3">3</a></sup></td></tr>
-		</table>
-		<p id="exitIndent"><i>Exeunt</i></p>
-	</div>
-	<dir class="divider"></dir>
+	<div class="divider"></div>
 	<div class="footNotes">
 		<p id="f1">
 			1 - In later editions, these lines had their punctuation changed, with the first interragotive mark left out: "When shall we three meet again/In thunder, lightning, or in rain?"
