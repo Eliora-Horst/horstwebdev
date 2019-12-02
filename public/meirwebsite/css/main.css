@@ -1,0 +1,139 @@
+
+body{
+	font-family: 'Suez One', serif;
+	padding: 0px;
+	margin: 0px;
+	background-color: #f6f6f6;
+}
+.lines{
+	margin: 2px;
+}
+table{
+	width: 80%;
+	margin-left: 10%;
+	padding: 25px;
+}
+.engTitle{
+	font-family: "David Libre", serif;
+	font-weight: bolder;
+}
+
+.mainContainer{
+	width: 75%;
+	margin:auto;
+	padding: 10px;
+	overflow: hidden;
+}
+.poemEnglish{
+	font-family: "David Libre", serif;
+	font-weight: bold;
+	font-size: 18px;
+}
+
+.poemHebrew > .lines{
+	text-align: right;
+	font-size: 18px;
+}
+.lineNumber{
+	vertical-align: text-top;
+}
+.poemTitle{
+	font-size: 22px;
+	text-align: center;
+	padding: 15px;
+}
+
+.topNav{
+	width: 100%;
+    height: 200px;
+    background-color: #ffffff;
+    background-image: url("../images/titlebackground.png");
+    border-bottom: 5px solid #2d79ac;
+    background-position: top right;
+}
+#logo{
+	padding: 25px;
+	width: 25%;
+	height: 200px;
+	float: left;
+}
+.topNav nav{
+	display: block;
+	height: 200px;
+	width: 100%;
+	text-align: center;
+}
+
+.topNav li{
+	list-style-type: none;
+	display: inline-block;
+	padding-right: 20px;
+	padding-left: 20px;
+	transition: 0.18s;
+	padding-top: 150px;
+	padding-bottom: 20px;
+}
+
+.btn>a:hover{
+	color: white;
+	background-color: #2d79ac; 
+}
+.topNav li > a{
+	font-size: 30px;
+	text-decoration: none;
+	color: #2d79ac;
+	transition: 0.18s;
+	font-weight: bold;
+	font-family: "David Libre", serif;
+	padding-top: 150px;
+	padding-bottom: 20px;
+	padding-right: 20px;
+	padding-left: 20px;
+}
+.topNav ul{
+	margin: 0;
+	padding: 0;
+}
+.manHeader{
+	font-size: 50px;
+	padding: 15px;
+	width: 50%;
+	border-bottom: 2px solid #2d79ac; 
+}
+.spacer{
+	height: 45px;
+	width: 25%;
+}
+.manuscript{
+	font-family: "David Libre", serif;
+	padding: 10px;
+}
+.manuscript h2{
+	padding-left: 50px;
+	padding-top: 10px;
+}
+.manuscript p{
+	font-size: 20px;
+	padding: 15px;
+}
+#quote{
+	margin-left: 15%;
+	padding-left: 10px;
+	width: 75%;
+	border-left: 2px solid #2d79ac;
+}
+.mainpage{
+	font-family: "David Libre", serif;
+}
+.mainpage h1{
+	font-size: 55px;
+	width: 50%;
+	margin-left:25%;
+	text-align:center;
+}
+.mainpage h3{
+	font-size: 35px;
+	width: 50%;
+	margin-left:25%;
+	text-align:center;
+}

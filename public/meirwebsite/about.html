@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="css/main.css">
+        <link href="https://fonts.googleapis.com/css?family=Suez+One&display=swap" rel="stylesheet"> 
+        <link href="https://fonts.googleapis.com/css?family=Crimson+Text:700&display=swap" rel="stylesheet"> 
+        <meta charset="utf-8">
+    </head>
+    <body>
+        <div class="topNav">
+            <div id="logo">
+                <a href="meirMain.html">
+                    <img src="images/logo.svg">
+                </a>
+            </div>
+            <nav>
+                <div>
+                    <ul>
+                        <li class="btn"><a href="thePoems.html">THE POEMS</a></li>
+                        <li class="btn"><a href="thePoet.html">THE POET</a></li>
+                        <li class="btn"><a href="theManuscript.html">THE MANUSCRIPT</a></li>
+                        <li class="btn"><a href="about.html">ABOUT</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+        <div class="manuscript">
+
+            <h1 class="manHeader">About the Project</h1>
+            <h3>Author: Eliora Horst</h3>
+            <h3>This project was started in the first semester of my Master’s in Digital Humanities program at Loyola University Chicago, in my class “Textual Criticism” with Dr. Marta Werner.  While this began as a final project, my intent is to continue to work on it until (at the very least) all of the poems of Meir of Norwich have been encoded and made available publicly online.</h3>
+            <h1>The Encoding</h1>
+            <p>While XML is often transformed into HTML using XSLT, I decided to not go with that route.  I did this because my goal with this project was to create a fully functional digital edition.  A fully functional digital edition, for me, means a clean, modern, responsive website, as well as the actual text.  In order to accomplish this, I decided to load XML into my already created HTML pages, using JavaScript.  It didn’t make sense to encode the entire site in XML and then have it be transformed with XSLT, as I did not need the links, banner images, and other extraneous pieces of the website encoded with the manuscript text.  For me, digital editions have (generally speaking) two stages: the first stage is the encoding in XML (or perhaps some other language, when that time comes).  The second stage is presenting that encoded document.  There are repositories and sites out there (such as TAPAS) that allow you to upload your XML document and they will format and design it for you, according to TEI guidelines.  However, using sites like those mean you are beholden to their design and format choices.  That is why I decided to figure out how to format and design the XML on my own.  The XML itself is still in TEI standard, with no extraneous tags.  However, as I continue to work on this project, I have considered added some of my own tags, that as of yet do not exists within TEI.  The main one I have considered (as I have been encoding) is an &ltacrostic&gt tag, with relevant child nodes, so acrostics within poems can be properly encoded.<br><br>Another snag I encountered was the difficulty with encoding in a language that reads right to left.  The text editor I usually use for all my coding I discovered (to my dismay) did not support right-to-left text.  I ended up using Oxygen, which is a great text editor specifically for encoding in XML with TEI standards.  While Oxygen allowed me to input Hebrew, it only allowed it in very specific ways.  Once I had written the Hebrew inside a tag, I could not insert a tag inside the Hebrew text.  Thus, my XML encoding was hindered somewhat.</p>
+            <h1>Why Meir of Norwich?</h1>
+            <p>A chance suggestion from an English professor at Loyola University Chicago (thank you, Dr Cornelius) first introduced me to the 2012 book “Into the Light,” which was the first full translation of all of Meir’s poems.  From there, I became fascinated with the solitary Anglo-Jewish Medieval poet.  I wanted to know more.  Where did these poems come from?  Why were they written?  Who was Meir of Norwich? Through hours of Googling and searching, I found the original manuscript in the Vatican Digital Library.  Then I found the books discussing his poetry.  Unfortunately, the majority of scholarship around Meir of Norwich’s poetry focuses on the state of Jewish persecution in Medieval England and his poetic response to it, as opposed to anything concrete about the man or the manuscript.  The scholarship concerning Meir, the manuscript, and their history, is very linear.  One book leads to the next, and each successive book or article references the preceding, with barely any branching.  The conclusion I finally reached was that this linear scholarship was inevitable when so little original content remains.<br><br>There is only a single poet, with a single manuscript.  Nothing else remains.  There are no documents, no artifacts about Meir or the manuscript his poems appear in.  The only thing we know about him is that he wrote these poems.  I hope this will not remain so.  My hope is that someday, some artifact of the past will rise to the surface, revealing more about the poet.  For now, we must work with what we have.</p>
+            <h1>Future of the Project</h1>
+            <p>For further development, I plan to complete my encoding of all the poems, and give them their own page on this site.  
+At some point, I would also like to craft some sort of original artwork to go with Meir’s poetry.  As an artist, and as a scholar with interest in Medieval England, I would like to make a woodcut or painted drawing, mimicking the art style of the time, and create something that would have been possible to have included with the original manuscript.
+
+I am also interested in researching how text encoding is being done in right-to-left languages, and if there have been any tools developed specifically for such a task.
+</p>
+        </div>
+    </body>
+</html>

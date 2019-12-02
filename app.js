@@ -42,7 +42,10 @@ app.get('/HTMLShakespeareExample', function(req, res){
   res.sendFile('/shakespeareHTML/main.html', {root: './public'})
 });
 
-
+app.get('/MeirOfNorwich', function(req, res){
+  console.log(res.sendFile)
+  res.sendFile('/meirwebsite/meirMain.html', {root: './public'})
+});
 // //Lingo App
 // app.get('/lingo', function(req, res){
 //   res.sendFile('html/lingo.html', {root : './public'});
