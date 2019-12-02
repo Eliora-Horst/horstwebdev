@@ -9,7 +9,7 @@ xhttpHeb.onreadystatechange = function() {
 };
 
 
-xhttpHeb.open("GET", "PutACurseOnMyEnemy.xml", true);
+xhttpHeb.open("GET", "/meirwebsite/PutACurseOnMyEnemy.xml", true);
 xhttpHeb.send();
 
 function myFunctionHeb(xml) {
@@ -47,7 +47,7 @@ xhttpEng.onreadystatechange = function() {
         myFunctionEng(this);
     }
 };
-xhttpEng.open("GET", "PutACurseOnMyEnemyEng.xml", true);
+xhttpEng.open("GET", "/meirwebsite/PutACurseOnMyEnemyEng.xml", true);
 xhttpEng.send();
 
 
