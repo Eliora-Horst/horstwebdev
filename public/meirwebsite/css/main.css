@@ -140,11 +140,23 @@ table{
 #tallage{
 	width: 64%;
 	margin-left: 18%;
-	border: 1px solid #dbdbdb;
 	padding: 10px;
 }
-figcaption{
+#tallage img{
+	border: 1px solid #dbdbdb;
+	margin: 10px;
+}
+#tallage figcaption{
 	font-size: 12px;
-	width: 64%;
-	margin-left: 18%;
+}
+#tablets{
+	width: 25%;
+	padding: 10px;
+}
+#tablets img{
+		border: 1px solid #dbdbdb;
+	margin: 10px;
+}
+#tablets figcaption{
+	font-size: 12px;
 }
