@@ -133,9 +133,8 @@ table{
 }
 .mainpage h3{
 	font-size: 35px;
-	width: 50%;
+	width: 55%;
 	margin-left:35%;
-	padding-top: 50px;
 }
 
 #tallage{
@@ -165,11 +164,14 @@ figcaption{
 }
 
 .containerHome{
-	width: 100%;
+	width: 80%;
+	margin-left: 10%;
 }
 .oneHome{
-	width: 35%;
+	width: 45%;
 	float: left;
+	margin: 20px;
+	margin-top: 0;
 }
 .oneHome img{
 	width: 100%;
