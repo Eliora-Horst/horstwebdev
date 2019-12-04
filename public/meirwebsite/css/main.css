@@ -134,8 +134,7 @@ table{
 .mainpage h3{
 	font-size: 35px;
 	width: 50%;
-	margin-left:25%;
-	text-align:center;
+	margin-left:35%;
 }
 
 #tallage{
@@ -168,12 +167,9 @@ figcaption{
 	width: 100%;
 }
 .oneHome{
-	width: 50%;
+	width: 35%;
 	float: left;
 }
 .oneHome img{
 	width: 100%;
-}
-.twoHome{
-	margin-left: 50%;
 }
