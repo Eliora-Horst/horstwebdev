@@ -24,8 +24,9 @@ function myFunctionHeb(xml) {
     //Get every line from the XML file
     x = xmlDoc.getElementsByTagName("l");
 
-    for (i = 0; i < x.length; i++) { 
 
+    for (i = 0; i < x.length; i++) { 
+        console.log(x[i].childNodes[0].nodeValue);
         txt += "<p class = \"lines\">"+ x[i].childNodes[0].nodeValue + "</p>";
 
         //Every third line, jump to next tr
