@@ -176,6 +176,7 @@ figcaption{
 }
 
 .XMLbutton{
+	margin-top: 10px;
 	background-color: #2d79ac;
 	border-radius: 15px;
 	margin: 25px;
@@ -190,5 +191,6 @@ figcaption{
 	text-decoration: none;
 }
 .buttons{
-	margin-bottom: 25px;
+	margin-bottom: 50px;
+	margin
 }
