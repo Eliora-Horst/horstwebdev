@@ -137,11 +137,14 @@ table{
 	margin-left:25%;
 	text-align:center;
 }
+
 #tallage{
 	width: 64%;
 	margin-left: 18%;
+}
+#tallage img{
 	border: 1px solid #dbdbdb;
-	margin: 10px;
+	width: 100%;
 }
 figcaption{
 	font-size: 12px;
