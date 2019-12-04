@@ -163,3 +163,17 @@ figcaption{
 .two{
 	margin-left: 25%;
 }
+
+.containerHome{
+	width: 100%;
+}
+.oneHome{
+	width: 50%;
+	float: left;
+}
+.oneHome img{
+	width: 100%;
+}
+.twoHome{
+	margin-left: 50%;
+}
