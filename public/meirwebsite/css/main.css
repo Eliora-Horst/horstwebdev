@@ -149,3 +149,15 @@ table{
 figcaption{
 	font-size: 12px;
 }
+
+.container{
+	width: 100%;
+	padding: 25px;
+}
+.one{
+	width: 25%;
+	float: left;
+}
+.two{
+	margin-left: 25%;
+}
